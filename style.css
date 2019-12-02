@@ -29,8 +29,35 @@ input[type="checkbox"] {
 input[type="checkbox"]:before {
   content: '';
   position: absolute;
+  top: 0;
+  left: 0;
   width: 80px;
   height: 40px;
   background: linear-gradient(0deg, hsl(0, 0%, 0%), hsl(0, 0%, 41%));
-  border-radius: 20px
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px hsl(0, 0%, 13%);
+  transform: scale(.98, .96);
+  transition: .5s;
+}
+
+input:checked[type="checkbox"]:before {
+  left: 40px;
+}
+
+input[type="checkbox"]:after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  left: calc(50% - 2px);
+  width: 4px;
+  height: 4px;
+  background: linear-gradient(0deg, hsl(0, 0%, 0%), hsl(0, 0%, 41%));
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px hsl(0, 0%, 13%);
+  transform: scale(.98, .96);
+  transition: .5s;
+}
+
+input:checked[type="checkbox"]:before {
+  left: 40px;
 }
