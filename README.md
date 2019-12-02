@@ -3,7 +3,7 @@ Cool effects and animations which I learned.
 
 ## Check Here ==> https://jakubfolta.github.io/CSSPlayground/
 
-## Css effects
+## Glowing Checkbox Button
 ![Css effects](./images/glowing-checkbox.png)
 
 ## Technologies
