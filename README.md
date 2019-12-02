@@ -1,7 +1,7 @@
 # CSS playground
 Cool effects and animations which I learned.
 
-## Check Here ==> https://jakubfolta.github.io/ShowMeTheBudget/
+## Check Here ==> https://jakubfolta.github.io/CSSPlayground/
 
 ## Css effects
 ![Css effects](./images/glowing-checkbox.png)
