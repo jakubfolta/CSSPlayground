@@ -107,8 +107,11 @@ ul li label input {
 
 ul li label .check {
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 0;
   width: 20px;
   height: 20px;
+  background: hsl(0, 0%, 0%);
+  display: block;
+  border-radius: 4px;
 }
