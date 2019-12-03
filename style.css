@@ -5,12 +5,13 @@
 }
 
 body {
-  background: hsl(120, 0%, 28%)
+  background: hsl(196, 100%, 2%)
 }
 
 .center {
-  text-align: center;
-  margin: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 /*************************************************************
@@ -72,3 +73,38 @@ body {
 /*************************************************************
 ******************* Custom Checkbox List *******************
 *************************************************************/
+
+ul {
+  margin: 0;
+  padding: 10px 20px;
+  background: hsl(199, 100%, 6%);
+  width: 200px;
+  border: 1px solid hsla(0, 0%, 0%, .5);
+}
+
+ul li {
+  list-style: none;
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 1px solid hsla(0, 0%, 0%, .2);
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+ul li label {
+  font-size: 18px;
+  color: hsl(0, 0%, 100%);
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+ul li label input {
+  opacity: 0;
+  cursor: pointer;
+}
+
+ul li label .check {
+
+}
