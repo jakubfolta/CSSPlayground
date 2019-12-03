@@ -128,3 +128,9 @@ ul li label .check:before {
   transition: .5s;
   transform: translateX(185px);
 }
+
+ul li label input:checked ~ .check:before {
+  background: hsl(79, 100%, 50%);
+  box-shadow: 0 0 15px hsl(79, 100%, 50%);
+  transform: translateX(0);
+}
