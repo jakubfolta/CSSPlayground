@@ -8,18 +8,16 @@ body {
   background: hsl(120, 0%, 28%)
 }
 
+.center {
+  text-align: center;
+  margin: 10px;
+}
+
 /*************************************************************
 ******************* Glowing Checbox Button *******************
 *************************************************************/
 
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-input[type="checkbox"] {
+.glowing {
   position: relative;
   width: 120px;
   height: 40px;
@@ -30,12 +28,12 @@ input[type="checkbox"] {
   box-shadow: 0 0 0 4px hsl(0, 0%, 21%), 0 0 0 5px hsl(0, 0%, 24%), inset 0 0 10px hsla(0,0%,0%,1), 0 5px 20px hsla(0,0%,0%,0.5), inset 0 0 15px hsla(0,0%,0%,.2);
 }
 
-input:checked[type="checkbox"] {
+.glowing:checked {
   background: linear-gradient(0deg, hsl(112, 100%, 50%), hsl(112, 100%, 20%));
   box-shadow: 0 0 2px hsl(112, 100%, 50%), 0 0 0 4px hsl(0, 0%, 21%), 0 0 0 5px hsl(0, 0%, 24%), inset 0 0 10px hsla(0,0%,0%,1), 0 5px 20px hsla(0,0%,0%,0.5), inset 0 0 15px hsla(0,0%,0%,.2);
 }
 
-input[type="checkbox"]:before {
+.glowing:before {
   content: '';
   position: absolute;
   top: 0;
@@ -49,11 +47,11 @@ input[type="checkbox"]:before {
   transition: .5s;
 }
 
-input:checked[type="checkbox"]:before {
+.glowing:checked:before {
   left: 40px;
 }
 
-input[type="checkbox"]:after {
+.glowing:after {
   content: '';
   position: absolute;
   top: calc(50% - 2px);
@@ -65,7 +63,7 @@ input[type="checkbox"]:after {
   transition: .5s;
 }
 
-input:checked[type="checkbox"]:after {
+.glowing:checked:after {
   background: hsl(112, 100%, 50%);
   left: 110px;
   box-shadow: 0 0 5px hsl(112, 100%, 80%), 0 0 15px hsl(112, 100%, 80%);
@@ -74,4 +72,3 @@ input:checked[type="checkbox"]:after {
 /*************************************************************
 ******************* Custom Checkbox List *******************
 *************************************************************/
-
