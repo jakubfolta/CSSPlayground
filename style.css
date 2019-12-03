@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -113,5 +112,19 @@ ul li label .check {
   height: 20px;
   background: hsl(0, 0%, 0%);
   display: block;
+  box-sizing: border-box;
   border-radius: 4px;
+}
+
+ul li label .check:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  background: hsl(201, 100%, 3%);
+  border-radius: 2px;
+  transition: .5s;
+  transform: translateX(185px);
 }
