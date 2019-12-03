@@ -4,7 +4,7 @@ Cool effects and animations which I learned.
 ## Check Here ==> https://jakubfolta.github.io/CSSPlayground/
 
 ## Glowing Checkbox Button
-![Css effects](./images/glowing-checkbox.png)
+![Css effects](./images/css-effects.png)
 
 ## Technologies
 * HTML5, CSS3, NPM
