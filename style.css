@@ -77,6 +77,64 @@ body {
 
 ul {
   background: hsl(243, 20%, 29%);
+  padding: 5px 20px;
   border: 1px solid hsl(0, 0%, 10%);
+  border-radius: 5px;
   width: 200px;
 }
+
+ul li {
+  position: relative;
+  padding: 10px 0;
+  list-style: none;
+  cursor: pointer;
+  border-bottom: 1px solid hsl(0, 0%, 10%);
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+ul li label {
+  cursor: pointer;
+  text-transform: uppercase;
+  color: hsl(0, 100%, 100%);
+  font-size: 18px;
+  padding-left: 25px;
+}
+
+ul li label input {
+  opacity: 0;
+  cursor: pointer;
+}
+
+ul li label .check {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background: hsl(0, 0%, 0%);
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+ul li label .check::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border-radius: 4px;
+  background: hsl(0, 0%, 10%);
+  transform: translateX(180px);
+  transition: .3s;
+}
+
+ul li label input:checked ~ .check::before {
+  background: hsl(109, 85%, 54%);
+  box-shadow: 0 0 15px hsl(109, 85%, 54%);
+  transform: translateX(0);
+}
+
+
