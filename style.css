@@ -10,6 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100vh;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -149,8 +150,8 @@ ul li label input:checked ~ .check::before {
 *************************************************************/
 
 .card {
-  width: 300px;
-  height: 400px;
+  transform-style: preserve-3d;
+  
 }
 
 
