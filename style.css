@@ -48,6 +48,37 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  width: 80px;
+  height: 40px;
+  background: linear-gradient(0deg, hsl(0, 0%, 40%), hsl(0, 0%, 10%));
+  border-radius: 20px;
+  transform: scale(.98, .96);
+  box-shadow: 0 0 0 1px hsl(0, 0%, 11%);
+  transition: .5s;
+}
+
+.glowing:checked::before {
+  left: 40px;
+}
+
+.glowing::after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 70px;
+  width: 4px;
+  height: 4px;
+  background: linear-gradient(0deg, hsl(0, 0%, 60%), hsl(0, 0%, 30%));
+  border-radius: 50%;
+  box-shadow: 0 0 0 .5px hsl(0, 0%, 11%);
+  transition: .5s;
+}
+
+.glowing:checked::after {
+  left: 110px;
+  background: hsl(109, 85%, 44%);
+  box-shadow: 0 0 5px hsl(109, 55%, 64%), 0 0 15px hsl(109, 55%, 64%);
+}
 
 /*************************************************************
 ******************* Custom Checkbox List *******************
