@@ -38,6 +38,11 @@ body {
   box-shadow: 0 0 0 4px hsl(0, 0%, 15%), 0 0 0 5px hsl(0, 0%, 20%), inset 0 0 10px hsla(0, 0%, 0%, 1);
 }
 
+.glowing:checked {
+  background: linear-gradient(0deg, hsl(109, 85%, 44%), hsl(109, 85%, 20%));
+  box-shadow:  0 0 2px hsl(109, 85%, 44%), 0 0 0 4px hsl(0, 0%, 15%), 0 0 0 5px hsl(0, 0%, 20%), inset 0 0 10px hsla(0, 0%, 0%, 1);
+}
+
 
 /*************************************************************
 ******************* Custom Checkbox List *******************
