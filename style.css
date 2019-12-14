@@ -62,16 +62,7 @@ body {
 }
 
 .glowing::after {
-  content: '';
-  position: absolute;
-  top: calc(50% - 2px);
-  left: 70px;
-  width: 4px;
-  height: 4px;
-  background: linear-gradient(0deg, hsl(0, 0%, 60%), hsl(0, 0%, 30%));
-  border-radius: 50%;
-  box-shadow: 0 0 0 .5px hsl(0, 0%, 11%);
-  transition: .5s;
+
 }
 
 .glowing:checked::after {
