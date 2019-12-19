@@ -40,7 +40,16 @@ body {
 }
 
 .glowing:before {
-  
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 90px;
+  height: 60px;
+  border-radius: 30px;
+  background: linear-gradient(0deg, hsl(0, 0%, 17%), hsl(0, 0%, 27%));
+  box-shadow: 0 0 0 1px hsl(221, 92%, 33%);
+  transform: scale(.98, .97);
 }
 
 
