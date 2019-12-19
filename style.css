@@ -29,9 +29,18 @@ body {
 
 .glowing {
   position: relative;
-  width: 200px;
-  height: 40px;
+  width: 180px;
+  height: 60px;
   -webkit-appearance: none;
+  background: linear-gradient(0deg, hsl(0, 0%, 20%), hsl(0, 0%, 40%));
+  cursor: pointer;
+  outline: none;
+  border-radius: 30px;
+  box-shadow: 0 0 0 4px hsl(221, 92%, 53%), 0 0 0 5px hsl(221, 92%, 33%);
+}
+
+.glowing:before {
+  
 }
 
 
