@@ -39,7 +39,12 @@ body {
   box-shadow: 0 0 0 4px hsl(221, 92%, 53%), 0 0 0 5px hsl(221, 92%, 33%);
 }
 
-.glowing:before {
+.glowing:checked {
+  background: linear-gradient(0deg, hsl(0, 95%, 51%), hsl(0, 100%, 63%));
+  box-shadow: 0 0 2px hsl(0, 100%, 43%), 0 0 0 4px hsl(221, 92%, 53%), 0 0 0 5px hsl(221, 92%, 33%), inset 0 0 10px hsl(0, 100%, 46%);
+}
+
+.glowing::before {
   position: absolute;
   content: '';
   top: 0;
@@ -50,6 +55,11 @@ body {
   background: linear-gradient(0deg, hsl(0, 0%, 17%), hsl(0, 0%, 27%));
   box-shadow: 0 0 0 1px hsl(221, 92%, 33%);
   transform: scale(.98, .97);
+  transition: .3s;
+}
+
+.glowing:checked::before {
+  left: 90px;
 }
 
 
