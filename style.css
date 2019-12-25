@@ -44,6 +44,20 @@ body {
   box-shadow: 0 0 2px hsl(122, 100%, 43%), 0 0 5px hsl(122, 100%, 63%), 0 0 0 4px hsl(0, 0%, 30%), 0 0 0 5px hsl(0, 0%, 20%), inset 0 0 10px hsl(122, 100%, 43%);
 }
 
+.glowing::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 90px;
+  height: 60px;
+  border-radius: 30px;
+  background: linear-gradient(0deg, hsl(0, 0%, 17%), hsl(0, 0%, 27%));
+  box-shadow: 0 0 0 1px hsl(0, 0%, 15%);
+  transform: scale(.98, .97);
+  transition: .4s;
+}
+
 /*************************************************************
 ******************* Custom Checkbox List *******************
 *************************************************************/
