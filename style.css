@@ -58,6 +58,19 @@ body {
   transition: .4s;
 }
 
+.glowing:checked::before {
+  left: 90px;
+}
+
+.glowing::after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 75px;
+  width: 6px;
+  height: 4px;
+}
+
 /*************************************************************
 ******************* Custom Checkbox List *******************
 *************************************************************/
