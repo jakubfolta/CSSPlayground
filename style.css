@@ -27,7 +27,17 @@ body {
 ******************* Glowing Checbox Button *******************
 *************************************************************/
 
-
+.glowing {
+  position: relative;
+  width: 180px;
+  height: 60px;
+  -webkit-appearance: none;
+  background: linear-gradient(0deg, hsl(0, 0%, 20%), hsl(0, 0%, 40%));
+  cursor: pointer;
+  outline: none;
+  border-radius: 30px;
+  box-shadow: 0 0 0 4px hsl(0, 0%, 30%), 0 0 0 5px hsl(0, 0%, 15%);
+}
 
 /*************************************************************
 ******************* Custom Checkbox List *******************
