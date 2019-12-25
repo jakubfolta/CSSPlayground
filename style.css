@@ -69,6 +69,10 @@ body {
   left: 75px;
   width: 6px;
   height: 4px;
+  background: linear-gradient(0deg, hsl(0, 0%, 17%), hsl(0, 0%, 27%));
+  border-radius: 30px;
+  box-shadow: 0 0 0 .5px hsl(0, 0%, 15%);
+  transition: .4s;
 }
 
 /*************************************************************
