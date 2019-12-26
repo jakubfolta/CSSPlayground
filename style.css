@@ -260,6 +260,7 @@ ul li label input:checked ~ .check::before {
 *************************************************************/
 
 .ring {
+  position: relative;
   background: transparent;
   width: 150px;
   height: 150px;
@@ -274,6 +275,57 @@ ul li label input:checked ~ .check::before {
   text-shadow: 0 0 10px hsl(111, 92%, 46%);
   box-shadow: 0 0 20px hsla(0, 0%, 0%, 0.5);
 }
+
+.ring:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent;
+  border-top: 3px solid hsl(111, 92%, 46%);
+  border-right: 3px solid hsl(111, 92%, 46%);
+  border-radius: 50%;
+  animation: animateCircle 2s linear infinite;
+}
+
+.ring span {
+  display: block;
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 50%;
+  width: 50%;
+  height: 4px;
+  background: transparent;
+  transform-origin: left;
+  animation: animate 2s linear infinite;
+}
+
+.ring span:before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: hsl(111, 92%, 46%);
+  top: -6px;
+  right: -8px;
+  box-shadow: 0 0 20px hsl(111, 92%, 46%);
+}
+
+@keyframes animate
+{
+    0%
+    {
+      transform: rotate(0deg);
+    }
+    100%
+    {
+      transform: rotate(360deg);
+    }
+}
+
 
 
 
