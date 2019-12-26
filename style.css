@@ -18,9 +18,16 @@ body {
 
 .center {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 10px 0;
+}
+
+.title {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 /*************************************************************
@@ -247,6 +254,12 @@ ul li label input:checked ~ .check::before {
 .social-icons a:hover {
   background: hsl(133, 100%, 50%);
 }
+
+/*************************************************************
+******************* Glowing Loader Ring *********************
+*************************************************************/
+
+
 
 
 
