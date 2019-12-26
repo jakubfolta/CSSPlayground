@@ -7,7 +7,7 @@
 }
 
 body {
-  background: hsl(0, 0%, 100%);
+  background: hsl(207, 92%, 45%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -259,6 +259,21 @@ ul li label input:checked ~ .check::before {
 ******************* Glowing Loader Ring *********************
 *************************************************************/
 
+.ring {
+  background: transparent;
+  width: 150px;
+  height: 150px;
+  border: 3px solid hsl(0, 0%, 21%);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 150px;
+  font-size: 20px;
+  color: hsl(111, 92%, 46%);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px hsl(111, 92%, 46%);
+  box-shadow: 0 0 20px hsla(0, 0%, 0%, 0.5);
+}
 
 
 
